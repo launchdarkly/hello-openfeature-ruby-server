@@ -20,7 +20,7 @@ OpenFeature::SDK.configure do |config|
 
   # Set up the context properties. This context should appear on your LaunchDarkly contexts dashboard
   # soon after you run the demo.
-  config.evaluation_context = OpenFeature::SDK::EvaluationContext(
+  config.evaluation_context = OpenFeature::SDK::EvaluationContext.new(
     key: 'example-user-key',
     kind: 'user',
     name: 'Sandy'
