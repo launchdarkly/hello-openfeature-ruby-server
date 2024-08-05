@@ -2,7 +2,7 @@
 
 source 'https://rubygems.org'
 
-gem 'launchdarkly-openfeature-server-sdk', path: '/home/mkeeler/code/launchdarkly/openfeature-ruby-server.git/release-please'
-gem 'launchdarkly-server-sdk', path: '/home/mkeeler/code/launchdarkly/ruby-server-sdk.git/main'
+gem 'launchdarkly-openfeature-server-sdk', '~> 0.1'
+gem 'launchdarkly-server-sdk'
 gem 'listen', '~> 3.3'
 gem 'openfeature-sdk'
