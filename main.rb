@@ -16,7 +16,7 @@ end
 provider = LaunchDarkly::OpenFeature::Provider.new(sdk_key)
 
 OpenFeature::SDK.configure do |config|
-  config.set_provider(provider)
+  config.set_provider_and_wait(provider)
 
   # Set up the context properties. This context should appear on your LaunchDarkly contexts dashboard
   # soon after you run the demo.
