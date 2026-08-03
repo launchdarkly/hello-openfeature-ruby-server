@@ -3,7 +3,7 @@ require 'ldclient-openfeature'
 require 'open_feature/sdk'
 
 sdk_key = ENV['LAUNCHDARKLY_SDK_KEY']
-feature_flag_key = ENV['LAUNCHDARKLY_FLAG_KEY']
+feature_flag_key = ENV['LAUNCHDARKLY_FLAG_KEY'] || 'sample-feature'
 
 if sdk_key == ''
   puts "*** Please set the LAUNCHDARKLY_SDK_KEY environment variable\n"
