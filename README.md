@@ -6,6 +6,8 @@ We've built a simple console script that demonstrates how LaunchDarkly's OpenFea
 
 ## Build instructions
 
+This example requires Ruby 3.4 or later, as required by the `launchdarkly-openfeature-server-sdk` and `openfeature-sdk` gems.
+
 1. Set the environment variable `LAUNCHDARKLY_SDK_KEY` to your LaunchDarkly SDK key. If there is an existing boolean feature flag in your LaunchDarkly project that you want to evaluate, set `LAUNCHDARKLY_FLAG_KEY` to the flag key; otherwise, a boolean flag of `sample-feature` will be assumed.
     ```bash
     export LAUNCHDARKLY_SDK_KEY="1234567890abcdef"
